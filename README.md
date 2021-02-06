@@ -7,3 +7,7 @@
 ### 8 kyu:
 
 [See Here](./8-kyu/README.md)
+
+### 6 kyu:
+
+[See Here](./6-kyu/README.md)
