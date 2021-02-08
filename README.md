@@ -1,6 +1,6 @@
 # Code Katas
 
-> repo with all my solved katas from <https://www.codewars.com>
+repo with all my solved katas from <https://www.codewars.com>, hopefully one every day.
 
 ![Codewarrior Profile Badge](https://www.codewars.com/users/otmanecherradi/badges/large)
 
