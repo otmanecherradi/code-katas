@@ -11,3 +11,7 @@ repo with all my solved katas from <https://www.codewars.com>, hopefully one eve
 ### 6 kyu:
 
 [See Here](./6-kyu/README.md)
+
+### 5 kyu:
+
+[See Here](./5-kyu/README.md)
