@@ -8,6 +8,10 @@ repo with all my solved katas from <https://www.codewars.com>, hopefully one eve
 
 [See Here](./8-kyu/README.md)
 
+### 7 kyu:
+
+[See Here](./7-kyu/README.md)
+
 ### 6 kyu:
 
 [See Here](./6-kyu/README.md)
