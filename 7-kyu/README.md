@@ -4,3 +4,4 @@
 
 - [Money, Money, Money](./money-money-money/README.md)
 - [Vowel Count](./vowel-count/README.md)
+- [Highest and Lowest](./highest-and-lowest/README.md)
