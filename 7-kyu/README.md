@@ -9,3 +9,4 @@
 - [Shortest Word](./shortest-word/README.md)
 - [Jaden Casing Strings](./jaden-casing-strings/README.md)
 - [Beginner Series #3 Sum of Numbers](./beginner-series-number-3-sum-of-numbers/README.md)
+- [Get the Middle Character](./get-the-middle-character/README.md)
