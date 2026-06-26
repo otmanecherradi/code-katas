@@ -6,8 +6,7 @@
 
 This time no story, no theory. The examples below show you how to write function `accum`:
 
-**Examples:**
-
+#### Examples:
 ```
 accum("abcd") -> "A-Bb-Ccc-Dddd"
 accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
@@ -51,3 +50,7 @@ The parameter of accum is a string which includes only letters from `a..z` and `
 - [ ] [elm]()
 - [ ] [pascal]()
 - [ ] [lua]()
+- [ ] [perl]()
+- [ ] [d]()
+- [ ] [erlang]()
+- [ ] [factor]()
