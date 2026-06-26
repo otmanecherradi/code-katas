@@ -1,0 +1,23 @@
+{
+  "id": "529b418d533b76924600085d",
+  "name": "Convert PascalCase string into snake_case",
+  "slug": "convert-pascalcase-string-into-snake-case",
+  "rank": 5,
+  "kyu": "5 kyu",
+  "url": "https://www.codewars.com/kata/529b418d533b76924600085d",
+  "category": "algorithms",
+  "tags": [
+    "Strings",
+    "Algorithms",
+    "Regular Expressions"
+  ],
+  "languages": [
+    "ruby",
+    "javascript",
+    "coffeescript",
+    "python",
+    "csharp",
+    "cobol"
+  ],
+  "description": "Complete the function/method so that it takes a `PascalCase` string and returns the string in `snake_case` notation. Lowercase characters can be numbers. If the method gets a number as input, it should return a string.\n\n## Examples\n```\n\"TestController\"  -->  \"test_controller\"\n\"MoviesAndBooks\"  -->  \"movies_and_books\"\n\"App7Test\"        -->  \"app7_test\"\n1                 -->  \"1\"\n```"
+}

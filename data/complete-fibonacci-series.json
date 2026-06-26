@@ -1,0 +1,18 @@
+{
+  "id": "5239f06d20eeab9deb00049b",
+  "name": "Complete Fibonacci Series",
+  "slug": "complete-fibonacci-series",
+  "rank": 6,
+  "kyu": "6 kyu",
+  "url": "https://www.codewars.com/kata/5239f06d20eeab9deb00049b",
+  "category": "algorithms",
+  "tags": [
+    "Algorithms"
+  ],
+  "languages": [
+    "javascript",
+    "ruby",
+    "python"
+  ],
+  "description": "The function 'fibonacci' should return an array of fibonacci numbers.  The function takes a number as an argument to decide how many no. of elements to produce. If the argument is less than or equal to 0 then return empty array\n\nExample:\n```javascript\nfibonacci(4) // should return  [0,1,1,2]\nfibonacci(-1) // should return []\n```\n```ruby\nfibonacci(4); # should return  [0,1,1,2]\nfibonacci(-1); # should return []\n```\n```python\nfibonacci(4) # should return  [0,1,1,2]\nfibonacci(-1) # should return []\n```\n\n"
+}

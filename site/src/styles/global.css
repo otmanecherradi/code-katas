@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+
+.shiki code {
+  counter-reset: line;
+}
+.shiki .line::before {
+  content: counter(line);
+  counter-increment: line;
+  display: inline-block;
+  width: 1.25rem;
+  margin-right: 1.5rem;
+  text-align: right;
+  color: #6e7681;
+  user-select: none;
+}

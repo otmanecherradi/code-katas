@@ -1,0 +1,17 @@
+{
+  "id": "583353eab189a5b860000049",
+  "name": "Lazy Chain",
+  "slug": "lazy-chain",
+  "rank": 5,
+  "kyu": "5 kyu",
+  "url": "https://www.codewars.com/kata/583353eab189a5b860000049",
+  "category": "reference",
+  "tags": [
+    "Functional Programming",
+    "Fundamentals"
+  ],
+  "languages": [
+    "javascript"
+  ],
+  "description": "Method chaining is a useful technique in JavaScript, allowing better composability and readability of functions.\n\nOne problem with standard JavaScript chaining is that chained methods are immediately executed upon creation.\n\n```javascript\nlet a = [ 1, 2, 3].map(x => x * 2).reverse();\n// a = [ 6, 4, 2]\n```\nThe problem with this is that it opens values up to possible mutation before being called.\n\n```javascript\na = a.join(\"\");\n// a = \"642\"\n\nfunction doSomething(array) {\n  // Does something to an array\n}\n\ndoSomething(a); // TypeError - a is not an array  \n```\n\nTo combat this we can create a function `lazyChain` that accepts an argument and allows chaining, but delays execution to when the value method is called.\n\n```javascript\nlet a = lazyChain([1,2,3])\n                          .invoke('map', x => x * 2)\n                          .invoke('reverse');\n\nconsole.log(a.value());\n// [ 6, 4, 2]\n\na.join(\"\");\n// TypeError\n\ndoSomething(a.value());\n// valid function call\n```\nYour task is to create the function `lazyChain` which accepts any value, and allows method chaining through the use of invoke, and execution with the value method.\n\nKeep in mind that invoke is general enough to accept any prototype methods from the standard language."
+}

@@ -106,7 +106,7 @@ async function loadKatas() {
   }
   const katas = [];
   for (const file of files) {
-    if (!file.endsWith(".json")) continue;
+    if (!file.endsWith(".json") || file === "katas.json") continue;
     katas.push(JSON.parse(await readFile(join(DATA_DIR, file), "utf8")));
   }
   return katas;
@@ -169,6 +169,7 @@ ${items}
 async function generate() {
   const katas = await loadKatas();
   const byRank = new Map();
+  const manifest = [];
 
   for (const kata of katas) {
     const dir = kataDir(kata);
@@ -177,7 +178,19 @@ async function generate() {
     await writeFile(join(dir, "README.md"), renderKataReadme(kata, solved));
     if (!byRank.has(kata.rank)) byRank.set(kata.rank, []);
     byRank.get(kata.rank).push(kata);
+
+    const solutions = [...solved.entries()].map(([lang, rel]) => ({
+      lang,
+      path: `${kyuDir(kata.rank)}/${kata.slug}/${rel.replace(/^\.\//, "")}`,
+    }));
+    manifest.push({ ...kata, solutions });
   }
+
+  manifest.sort((a, b) => b.rank - a.rank || a.name.localeCompare(b.name));
+  await writeFile(
+    join(DATA_DIR, "katas.json"),
+    JSON.stringify(manifest, null, 2) + "\n"
+  );
 
   for (const [rank, group] of byRank) {
     await writeFile(join(ROOT, kyuDir(rank), "README.md"), renderKyuIndex(rank, group));

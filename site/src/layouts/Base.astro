@@ -1,0 +1,38 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const repoUrl = "https://github.com/otmanecherradi/code-katas";
+const codewarsUrl = "https://www.codewars.com/users/otmanecherradi";
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body class="flex min-h-screen flex-col bg-zinc-950 text-zinc-100 antialiased">
+    <div class="flex-1">
+      <slot />
+    </div>
+    <footer class="border-t border-zinc-800">
+      <div class="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-2 px-5 py-6 text-sm text-zinc-500">
+        <span>
+          Codewars katas solved by{" "}
+          <a class="text-zinc-400 hover:text-zinc-200" href={codewarsUrl} target="_blank" rel="noopener">
+            @otmanecherradi
+          </a>
+        </span>
+        <a class="text-zinc-400 hover:text-zinc-200" href={repoUrl} target="_blank" rel="noopener">
+          Source on GitHub ↗
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

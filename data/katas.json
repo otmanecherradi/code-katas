@@ -1,0 +1,1060 @@
+[
+  {
+    "id": "50654ddff44f800200000004",
+    "name": "Multiply",
+    "slug": "multiply",
+    "rank": 8,
+    "kyu": "8 kyu",
+    "url": "https://www.codewars.com/kata/50654ddff44f800200000004",
+    "category": "bug_fixes",
+    "tags": [
+      "Debugging",
+      "Fundamentals"
+    ],
+    "languages": [
+      "javascript",
+      "coffeescript",
+      "ruby",
+      "python",
+      "haskell",
+      "clojure",
+      "java",
+      "csharp",
+      "elixir",
+      "cpp",
+      "typescript",
+      "php",
+      "crystal",
+      "dart",
+      "rust",
+      "fsharp",
+      "swift",
+      "go",
+      "shell",
+      "c",
+      "lua",
+      "sql",
+      "bf",
+      "r",
+      "nim",
+      "erlang",
+      "objc",
+      "scala",
+      "kotlin",
+      "solidity",
+      "groovy",
+      "fortran",
+      "nasm",
+      "julia",
+      "powershell",
+      "purescript",
+      "elm",
+      "ocaml",
+      "reason",
+      "idris",
+      "racket",
+      "agda",
+      "coq",
+      "vb",
+      "forth",
+      "factor",
+      "prolog",
+      "cfml",
+      "lean",
+      "cobol",
+      "haxe",
+      "commonlisp",
+      "raku",
+      "perl",
+      "pascal",
+      "d",
+      "lambdacalc",
+      "riscv"
+    ],
+    "description": "This code does not execute properly. Try to figure out why.",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "8-kyu/multiply/01-solution.js"
+      },
+      {
+        "lang": "python",
+        "path": "8-kyu/multiply/02-solution.py"
+      },
+      {
+        "lang": "c",
+        "path": "8-kyu/multiply/03-solution.c"
+      },
+      {
+        "lang": "rust",
+        "path": "8-kyu/multiply/04-solution.rs"
+      },
+      {
+        "lang": "sql",
+        "path": "8-kyu/multiply/05-solution.sql"
+      },
+      {
+        "lang": "kotlin",
+        "path": "8-kyu/multiply/06-solution.kt"
+      },
+      {
+        "lang": "lua",
+        "path": "8-kyu/multiply/07-solution.lua"
+      },
+      {
+        "lang": "typescript",
+        "path": "8-kyu/multiply/08-solution.ts"
+      },
+      {
+        "lang": "java",
+        "path": "8-kyu/multiply/09-solution.java"
+      }
+    ]
+  },
+  {
+    "id": "57d814e4950d8489720008db",
+    "name": "N-th Power",
+    "slug": "n-th-power",
+    "rank": 8,
+    "kyu": "8 kyu",
+    "url": "https://www.codewars.com/kata/57d814e4950d8489720008db",
+    "category": "reference",
+    "tags": [
+      "Fundamentals",
+      "Arrays"
+    ],
+    "languages": [
+      "python",
+      "c",
+      "java",
+      "csharp",
+      "javascript",
+      "typescript",
+      "coffeescript",
+      "cpp",
+      "prolog",
+      "rust",
+      "ruby",
+      "crystal",
+      "factor"
+    ],
+    "description": "Removed due to copyright infringement.\n\n<!--\n\nThis kata is from check py.checkio.org\n\nYou are given an array with positive numbers and a non-negative number N. You should find the N-th power of the element in the array with the index N. If N is outside of the array, then return -1. Don't forget that the first element has the index 0.\n\nLet's look at a few examples:\n\n~~~if-not:factor\n* array = [1, 2, 3, 4] and N = 2, then the result is 3^2 == 9;\n* array = [1, 2, 3] and N = 3, but N is outside of the array, so the result is -1.\n~~~\n\n~~~if:factor\n* `{ 1 2 3 4 } :> array` and `2 :> n`, then the result is `3 2 ^ -> 9`;\n* `{ 1 2 3 } :> array` and `3 :> n`, but N is outside of the array, so the result is `-1`.\n~~~\n\n-->",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "8-kyu/n-th-power/01-solution.js"
+      },
+      {
+        "lang": "python",
+        "path": "8-kyu/n-th-power/02-solution.py"
+      }
+    ]
+  },
+  {
+    "id": "56bc28ad5bdaeb48760009b0",
+    "name": "Remove First and Last Character",
+    "slug": "remove-first-and-last-character",
+    "rank": 8,
+    "kyu": "8 kyu",
+    "url": "https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0",
+    "category": "reference",
+    "tags": [
+      "Strings",
+      "Fundamentals"
+    ],
+    "languages": [
+      "javascript",
+      "ruby",
+      "python",
+      "coffeescript",
+      "csharp",
+      "haskell",
+      "typescript",
+      "php",
+      "c",
+      "bf",
+      "shell",
+      "java",
+      "elixir",
+      "cpp",
+      "go",
+      "scala",
+      "nasm",
+      "kotlin",
+      "julia",
+      "racket",
+      "rust",
+      "prolog",
+      "cfml",
+      "crystal",
+      "lua",
+      "r",
+      "perl",
+      "cobol",
+      "d",
+      "factor",
+      "sql",
+      "swift"
+    ],
+    "description": "# Remove First and Last Character\n\n## Task\n\nYour goal is to write a function that removes the first and last characters of a string. You're given one parameter, the original string.\n\n**Important:** Your function should handle strings of any `length ≥ 2` characters. For strings with exactly `2` characters, return an empty string.\n\n## Examples\n\n```javascript\n'eloquent' --> 'loquen'\n'country'  --> 'ountr' \n'person'   --> 'erso'\n'ab'       --> '' (empty string)\n'xyz'      --> 'y'\n```\n\n## Requirements\n\n- The input string will always have at least 2 characters\n- For strings with exactly 2 characters, return an empty string\n- For strings with 3 or more characters, remove the first and last character\n- The function should handle strings containing letters, numbers, and special characters\n\n## Test Cases\n\nYour solution will be tested against:\n- Basic functionality with common words\n- Edge cases with 2-character and 3-character strings\n- Strings containing numbers and special characters\n- Random test cases of varying lengths",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "8-kyu/remove-first-and-last-character/01-solution.js"
+      },
+      {
+        "lang": "python",
+        "path": "8-kyu/remove-first-and-last-character/02-solution.py"
+      },
+      {
+        "lang": "java",
+        "path": "8-kyu/remove-first-and-last-character/03-solution.java"
+      },
+      {
+        "lang": "kotlin",
+        "path": "8-kyu/remove-first-and-last-character/04-solution.kt"
+      },
+      {
+        "lang": "typescript",
+        "path": "8-kyu/remove-first-and-last-character/05-solution.ts"
+      }
+    ]
+  },
+  {
+    "id": "51c8991dee245d7ddf00000e",
+    "name": "Reversed Words",
+    "slug": "reversed-words",
+    "rank": 8,
+    "kyu": "8 kyu",
+    "url": "https://www.codewars.com/kata/51c8991dee245d7ddf00000e",
+    "category": "algorithms",
+    "tags": [
+      "Strings",
+      "Algorithms"
+    ],
+    "languages": [
+      "ruby",
+      "javascript",
+      "haskell",
+      "coffeescript",
+      "python",
+      "csharp",
+      "shell",
+      "rust",
+      "java",
+      "fsharp",
+      "scala",
+      "php",
+      "julia",
+      "kotlin",
+      "lua",
+      "racket",
+      "typescript",
+      "clojure",
+      "crystal",
+      "cpp",
+      "r",
+      "go",
+      "c",
+      "cobol",
+      "elixir",
+      "ocaml",
+      "groovy",
+      "dart",
+      "perl"
+    ],
+    "description": "Complete the solution so that it reverses all of the words within the string passed in.\n\nWords are separated by exactly one space and there are no leading or trailing spaces.\n\n**Example(Input --> Output):**\n```\n\"The greatest victory is that which requires no battle\" --> \"battle no requires which that is victory greatest The\"\n```\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "8-kyu/reversed-words/01-solution.js"
+      },
+      {
+        "lang": "python",
+        "path": "8-kyu/reversed-words/02-solution.py"
+      }
+    ]
+  },
+  {
+    "id": "55f2b110f61eb01779000053",
+    "name": "Beginner Series #3 Sum of Numbers",
+    "slug": "beginner-series-number-3-sum-of-numbers",
+    "rank": 7,
+    "kyu": "7 kyu",
+    "url": "https://www.codewars.com/kata/55f2b110f61eb01779000053",
+    "category": "reference",
+    "tags": [
+      "Fundamentals",
+      "Algorithms"
+    ],
+    "languages": [
+      "csharp",
+      "java",
+      "python",
+      "javascript",
+      "coffeescript",
+      "ruby",
+      "typescript",
+      "c",
+      "r",
+      "nasm",
+      "fsharp",
+      "haskell",
+      "julia",
+      "prolog",
+      "scala",
+      "cpp",
+      "pascal",
+      "crystal",
+      "shell",
+      "clojure",
+      "cobol",
+      "rust",
+      "go",
+      "lua",
+      "php"
+    ],
+    "description": "Given two integers `a` and `b`, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return `a` or `b`.\n\n**Note:** `a` and `b` are not ordered!\n\n## Examples (a, b) --> output (explanation)\n\n```\n(1, 0) --> 1 (1 + 0 = 1)\n(1, 2) --> 3 (1 + 2 = 3)\n(0, 1) --> 1 (0 + 1 = 1)\n(1, 1) --> 1 (1 since both are same)\n(-1, 0) --> -1 (-1 + 0 = -1)\n(-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)\n```\nYour function should only return a number, not the explanation about how you get that number.",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "7-kyu/beginner-series-number-3-sum-of-numbers/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "56747fd5cb988479af000028",
+    "name": "Get the Middle Character",
+    "slug": "get-the-middle-character",
+    "rank": 7,
+    "kyu": "7 kyu",
+    "url": "https://www.codewars.com/kata/56747fd5cb988479af000028",
+    "category": "reference",
+    "tags": [
+      "Fundamentals",
+      "Strings"
+    ],
+    "languages": [
+      "csharp",
+      "javascript",
+      "ruby",
+      "python",
+      "java",
+      "coffeescript",
+      "haskell",
+      "clojure",
+      "cpp",
+      "php",
+      "typescript",
+      "elixir",
+      "rust",
+      "r",
+      "crystal",
+      "fsharp",
+      "kotlin",
+      "bf",
+      "nim",
+      "erlang",
+      "nasm",
+      "scala",
+      "julia",
+      "dart",
+      "go",
+      "d",
+      "c",
+      "lua"
+    ],
+    "description": "You are going to be given a **non-empty** string. Your job is to return the middle character(s) of the string.\n* If the string's length is odd, return the middle character.\n* If the string's length is even, return the middle 2 characters.\n\n### Examples:\n\n```javascript\n\"test\" --> \"es\"\n\"testing\" --> \"t\"\n\"middle\" --> \"dd\"\n\"A\" --> \"A\"\n```",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "7-kyu/get-the-middle-character/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "554b4ac871d6813a03000035",
+    "name": "Highest and Lowest",
+    "slug": "highest-and-lowest",
+    "rank": 7,
+    "kyu": "7 kyu",
+    "url": "https://www.codewars.com/kata/554b4ac871d6813a03000035",
+    "category": "reference",
+    "tags": [
+      "Fundamentals",
+      "Strings"
+    ],
+    "languages": [
+      "csharp",
+      "javascript",
+      "python",
+      "ruby",
+      "java",
+      "coffeescript",
+      "haskell",
+      "rust",
+      "typescript",
+      "fsharp",
+      "go",
+      "kotlin",
+      "php",
+      "crystal",
+      "cpp",
+      "elixir",
+      "julia",
+      "r",
+      "clojure",
+      "c",
+      "cobol",
+      "scala",
+      "d",
+      "lua",
+      "factor",
+      "groovy",
+      "dart",
+      "swift"
+    ],
+    "description": "In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.\n\n### Examples\n``` text\nInput: \"1 2 3 4 5\"   =>  Output: \"5 1\"\nInput: \"1 2 -3 4 5\"  =>  Output: \"5 -3\"\nInput: \"1 9 3 4 -5\"  =>  Output: \"9 -5\"\n```\n```php\nhighAndLow(\"1 2 3 4 5\"); // return \"5 1\"\nhighAndLow(\"1 2 -3 4 5\"); // return \"5 -3\"\nhighAndLow(\"1 9 3 4 -5\"); // return \"9 -5\"\n```\n```csharp\nKata.HighAndLow(\"1 2 3 4 5\"); // return \"5 1\"\nKata.HighAndLow(\"1 2 -3 4 5\"); // return \"5 -3\"\nKata.HighAndLow(\"1 9 3 4 -5\"); // return \"9 -5\"\n```\n```fsharp\nhighAndLow \"1 2 3 4 5\" // return \"5 1\"\nhighAndLow \"1 2 -3 4 5\" // return \"5 -3\"\nhighAndLow \"1 9 3 4 -5\" // return \"9 -5\"\n```\n```javascript\nhighAndLow(\"1 2 3 4 5\"); // return \"5 1\"\nhighAndLow(\"1 2 -3 4 5\"); // return \"5 -3\"\nhighAndLow(\"1 9 3 4 -5\"); // return \"9 -5\"\n```\n```d\nhighAndLow(\"1 2 3 4 5\"); // return \"5 1\"\nhighAndLow(\"1 2 -3 4 5\"); // return \"5 -3\"\nhighAndLow(\"1 9 3 4 -5\"); // return \"9 -5\"\n```\n```c\nhigh_and_low(\"1 2 3 4 5\") // return \"5 1\"\nhigh_and_low(\"1 2 -3 4 5\") // return \"5 -3\"\nhigh_and_low(\"1 9 3 4 -5\") // return \"9 -5\"\n```\n```cpp\nhighAndLow(\"1 2 3 4 5\"); // return \"5 1\"\nhighAndLow(\"1 2 -3 4 5\"); // return \"5 -3\"\nhighAndLow(\"1 9 3 4 -5\"); // return \"9 -5\"\n```\n```typescript\nhighAndLow(\"1 2 3 4 5\"); // return \"5 1\"\nhighAndLow(\"1 2 -3 4 5\"); // return \"5 -3\"\nhighAndLow(\"1 9 3 4 -5\"); // return \"9 -5\"\n```\n```coffeescript\nhighAndLow(\"1 2 3 4 5\") # return \"5 1\"\nhighAndLow(\"1 2 -3 4 5\") # return \"5 -3\"\nhighAndLow(\"1 9 3 4 -5\") # return \"9 -5\"\n```\n```python\nhigh_and_low(\"1 2 3 4 5\") # return \"5 1\"\nhigh_and_low(\"1 2 -3 4 5\") # return \"5 -3\"\nhigh_and_low(\"1 9 3 4 -5\") # return \"9 -5\"\n```\n```ruby\nhigh_and_low(\"1 2 3 4 5\") # return \"5 1\"\nhigh_and_low(\"1 2 -3 4 5\") # return \"5 -3\"\nhigh_and_low(\"1 9 3 4 -5\") # return \"9 -5\"\n```\n```crystal\nhigh_and_low(\"1 2 3 4 5\") # return \"5 1\"\nhigh_and_low(\"1 2 -3 4 5\") # return \"5 -3\"\nhigh_and_low(\"1 9 3 4 -5\") # return \"9 -5\"\n```\n```c\nhigh_and_low(\"1 2 3 4 5\", result) // result \"5 1\"\nhigh_and_low(\"1 2 -3 4 5\", result) // result \"5 -3\"\nhigh_and_low(\"1 9 3 4 -5\", result) // result \"9 -5\"\n```\n```java\nhighAndLow(\"1 2 3 4 5\") // return \"5 1\"\nhighAndLow(\"1 2 -3 4 5\") // return \"5 -3\"\nhighAndLow(\"1 9 3 4 -5\") // return \"9 -5\"\n```\n```haskell\nhighAndLow \"1 2 3 4 5\") -- return \"5 1\"\nhighAndLow \"1 2 -3 4 5\") -- return \"5 -3\"\nhighAndLow \"1 9 3 4 -5\") -- return \"9 -5\"\n```\n```go\nHighAndLow(\"1 2 3 4 5\") // return \"5 1\"\nHighAndLow(\"1 2 -3 4 5\") // return \"5 -3\"\nHighAndLow(\"1 9 3 4 -5\") // return \"9 -5\"\n```\n```kotlin\nhighAndLow(\"1 2 3 4 5\") // return \"5 1\"\nhighAndLow(\"1 2 -3 4 5\") // return \"5 -3\"\nhighAndLow(\"1 9 3 4 -5\") // return \"9 -5\"\n```\n```elixir\nKata.high_and_low(\"1 2 3 4 5\") # return \"5 1\"\nKata.high_and_low(\"1 2 -3 4 5\") # return \"5 -3\"\nKata.high_and_low(\"1 9 3 4 -5\") # return \"9 -5\"\n```\n```clojure\n(high-and-low \"1 2 3 4 5\") ; return \"5 1\"\n(high-and-low \"1 2 -3 4 5\") ; return \"5 -3\"\n(high-and-low \"1 9 3 4 -5\") ; return \"9 -5\"\n```\n```julia\nhighandlow(\"1 2 3 4 5\") # return \"5 1\"\nhighandlow(\"1 2 -3 4 5\") # return \"5 -3\"\nhighandlow(\"1 9 3 4 -5\") # return \"9 -5\"\n```\n```rust\nhigh_and_low(\"1 2 3 4 5\") // return \"5 1\"\nhigh_and_low(\"1 2 -3 4 5\") // return \"5 -3\"\nhigh_and_low(\"1 9 3 4 -5\") // return \"9 -5\"\n```\n```cobol\n            HighAndLow(\"1 2 3 4 5\")\n            * RESULT = \"5 1\"\n            HighAndLow(\"1 2 -3 4 5\")\n            * RESULT = \"5 -3\"\n            HighAndLow(\"1 9 3 4 -5\")\n            * RESULT = \"9 -5\"\n```\n```scala\nSol.high_and_low(\"1 2 3 4 5\") // return \"5 1\"\nSol.high_and_low(\"1 2 -3 4 5\") // return \"5 -3\"\nSol.high_and_low(\"1 9 3 4 -5\") // return \"9 -5\"\n```\n```lua\nhigh_and_low \"1 2 3 4 5\" --> return \"5 1\"\nhigh_and_low \"1 2 -3 4 5\" --> return \"5 -3\"\nhigh_and_low \"1 9 3 4 -5\" --> return \"9 -5\"\n```\n```groovy\nKata.highAndLow(\"1 2 3 4 5\") // return \"5 1\"\nKata.highAndLow(\"1 2 -3 4 5\") // return \"5 -3\"\nKata.highAndLow(\"1 9 3 4 -5\") // return \"9 -5\"\n```\n```dart\nhighAndLow(\"1 2 3 4 5\") // return \"5 1\"\nhighAndLow(\"1 2 -3 4 5\") // return \"5 -3\"\nhighAndLow(\"1 9 3 4 -5\") // return \"9 -5\"\n```\n\n### Notes\n\n- All numbers are valid `Int32`, no *need* to validate them.\n- There will always be at least one number in the input string.\n- Output string must be two numbers separated by a single space, and highest number is first.\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "7-kyu/highest-and-lowest/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "5390bac347d09b7da40006f6",
+    "name": "Jaden Casing Strings",
+    "slug": "jaden-casing-strings",
+    "rank": 7,
+    "kyu": "7 kyu",
+    "url": "https://www.codewars.com/kata/5390bac347d09b7da40006f6",
+    "category": "reference",
+    "tags": [
+      "Strings",
+      "Fundamentals"
+    ],
+    "languages": [
+      "javascript",
+      "python",
+      "ruby",
+      "coffeescript",
+      "haskell",
+      "java",
+      "clojure",
+      "php",
+      "csharp",
+      "typescript",
+      "crystal",
+      "swift",
+      "julia",
+      "go",
+      "c",
+      "scala",
+      "cobol",
+      "lua"
+    ],
+    "description": "Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for [some of his philosophy that he delivers via Twitter](https://twitter.com/jaden). When writing on Twitter, he is known for almost always capitalizing every word. For simplicity, you'll have to capitalize each word, check out how contractions are expected to be in the example below.\n\nYour task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.\n\nExample:\n\n    Not Jaden-Cased: \"How can mirrors be real if our eyes aren't real\"\n    Jaden-Cased:     \"How Can Mirrors Be Real If Our Eyes Aren't Real\"\n\n```if:java    \nNote that the **Java version** expects a return value of null for an empty string or null.\n```\n\n[Link to Jaden's former Twitter account @officialjaden via archive.org](https://web.archive.org/web/20190624190255/https://twitter.com/officialjaden)",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "7-kyu/jaden-casing-strings/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "563f037412e5ada593000114",
+    "name": "Money, Money, Money",
+    "slug": "money-money-money",
+    "rank": 7,
+    "kyu": "7 kyu",
+    "url": "https://www.codewars.com/kata/563f037412e5ada593000114",
+    "category": "reference",
+    "tags": [
+      "Fundamentals"
+    ],
+    "languages": [
+      "csharp",
+      "python",
+      "ruby",
+      "javascript",
+      "coffeescript",
+      "java",
+      "scala",
+      "typescript"
+    ],
+    "description": "Mr. Scrooge has a sum of money 'P' that he wants to invest. Before he does, he wants to know how many years 'Y' this sum 'P' has to be kept in the bank in order for it to amount to a desired sum of money 'D'.\n\nThe sum is kept for 'Y' years in the bank where interest 'I' is paid yearly. After paying taxes 'T' for the year the new sum is re-invested.\n\nNote to Tax: not the invested principal is taxed, but only the year's accrued interest\n\nExample:\n\n      Let P be the Principal = 1000.00      \n      Let I be the Interest Rate = 0.05      \n      Let T be the Tax Rate = 0.18      \n      Let D be the Desired Sum = 1100.00\n\n\n    After 1st Year -->\n      P = 1041.00\n    After 2nd Year -->\n      P = 1083.86\n    After 3rd Year -->\n      P = 1128.30\n  \nThus Mr. Scrooge has to wait for 3 years for the initial principal to amount to the desired sum.\n \nYour task is to complete the method provided and return the number of years 'Y' as a whole in order for Mr. Scrooge to get the desired sum.  \n\nAssumption: Assume that Desired Principal 'D' is always greater than the initial principal. However it is best to take into consideration that if Desired Principal 'D' is equal to Principal 'P' this should return 0 Years.",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "7-kyu/money-money-money/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "5667e8f4e3f572a8f2000039",
+    "name": "Mumbling",
+    "slug": "mumbling",
+    "rank": 7,
+    "kyu": "7 kyu",
+    "url": "https://www.codewars.com/kata/5667e8f4e3f572a8f2000039",
+    "category": "reference",
+    "tags": [
+      "Fundamentals",
+      "Strings",
+      "Puzzles"
+    ],
+    "languages": [
+      "ruby",
+      "python",
+      "javascript",
+      "haskell",
+      "csharp",
+      "java",
+      "clojure",
+      "coffeescript",
+      "elixir",
+      "typescript",
+      "cpp",
+      "php",
+      "crystal",
+      "fsharp",
+      "c",
+      "swift",
+      "go",
+      "rust",
+      "r",
+      "shell",
+      "ocaml",
+      "kotlin",
+      "scala",
+      "groovy",
+      "julia",
+      "powershell",
+      "nim",
+      "reason",
+      "racket",
+      "dart",
+      "elm",
+      "pascal",
+      "lua",
+      "perl",
+      "d",
+      "erlang",
+      "factor"
+    ],
+    "description": "This time no story, no theory. The examples below show you how to write function `accum`:\n\n#### Examples:\n```\naccum(\"abcd\") -> \"A-Bb-Ccc-Dddd\"\naccum(\"RqaEzty\") -> \"R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy\"\naccum(\"cwAt\") -> \"C-Ww-Aaa-Tttt\"\n```\n\nThe parameter of accum is a string which includes only letters from `a..z` and `A..Z`.",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "7-kyu/mumbling/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "57cebe1dc6fdc20c57000ac9",
+    "name": "Shortest Word",
+    "slug": "shortest-word",
+    "rank": 7,
+    "kyu": "7 kyu",
+    "url": "https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9",
+    "category": "reference",
+    "tags": [
+      "Fundamentals"
+    ],
+    "languages": [
+      "javascript",
+      "python",
+      "php",
+      "ruby",
+      "csharp",
+      "rust",
+      "crystal",
+      "coffeescript",
+      "java",
+      "haskell",
+      "r",
+      "fsharp",
+      "go",
+      "scala",
+      "kotlin",
+      "typescript",
+      "cpp",
+      "c",
+      "nasm",
+      "reason",
+      "nim",
+      "factor",
+      "julia",
+      "prolog",
+      "swift",
+      "elixir",
+      "cobol",
+      "clojure",
+      "d",
+      "cfml",
+      "lua",
+      "perl"
+    ],
+    "description": "Simple, given a string of words, return the length of the shortest word(s).\n\nString will never be empty and you do not need to account for different data types.\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "7-kyu/shortest-word/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "54ff3102c1bad923760001f3",
+    "name": "Vowel Count",
+    "slug": "vowel-count",
+    "rank": 7,
+    "kyu": "7 kyu",
+    "url": "https://www.codewars.com/kata/54ff3102c1bad923760001f3",
+    "category": "reference",
+    "tags": [
+      "Strings",
+      "Fundamentals"
+    ],
+    "languages": [
+      "java",
+      "javascript",
+      "python",
+      "ruby",
+      "haskell",
+      "csharp",
+      "crystal",
+      "elixir",
+      "php",
+      "typescript",
+      "r",
+      "nasm",
+      "julia",
+      "kotlin",
+      "go",
+      "scala",
+      "cpp",
+      "c",
+      "coffeescript",
+      "rust",
+      "dart",
+      "prolog",
+      "pascal",
+      "perl",
+      "cobol",
+      "fsharp",
+      "ocaml",
+      "lua",
+      "factor",
+      "sql",
+      "riscv",
+      "d",
+      "groovy"
+    ],
+    "description": "Return the number (count) of vowels in the given string. \n\nWe will consider `a`, `e`, `i`, `o`, `u` as vowels for this Kata (but not `y`).\n\nThe input string will only consist of lower case letters and/or spaces.\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "7-kyu/vowel-count/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "523f5d21c841566fde000009",
+    "name": "Array.diff",
+    "slug": "array-dot-diff",
+    "rank": 6,
+    "kyu": "6 kyu",
+    "url": "https://www.codewars.com/kata/523f5d21c841566fde000009",
+    "category": "reference",
+    "tags": [
+      "Arrays",
+      "Fundamentals",
+      "Algorithms"
+    ],
+    "languages": [
+      "javascript",
+      "coffeescript",
+      "haskell",
+      "ruby",
+      "python",
+      "csharp",
+      "rust",
+      "clojure",
+      "php",
+      "groovy",
+      "julia",
+      "nim",
+      "r",
+      "elixir",
+      "fsharp",
+      "prolog",
+      "c",
+      "java",
+      "crystal",
+      "scala",
+      "typescript",
+      "cobol",
+      "go"
+    ],
+    "description": "Implement a function that computes the difference between two lists. The function should remove all occurrences of elements from the first list (`a`) that are present in the second list (`b`). The order of elements in the first list should be preserved in the result.\n\n## Examples\n\nIf `a = [1, 2]` and `b = [1]`, the result should be `[2]`.\n\nIf `a = [1, 2, 2, 2, 3]` and `b = [2]`, the result should be `[1, 3]`.\n\n~~~ if:c\n## NOTE: \n\nIn C, assign return array length to pointer `*z`\n~~~",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "6-kyu/array-dot-diff/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "5239f06d20eeab9deb00049b",
+    "name": "Complete Fibonacci Series",
+    "slug": "complete-fibonacci-series",
+    "rank": 6,
+    "kyu": "6 kyu",
+    "url": "https://www.codewars.com/kata/5239f06d20eeab9deb00049b",
+    "category": "algorithms",
+    "tags": [
+      "Algorithms"
+    ],
+    "languages": [
+      "javascript",
+      "ruby",
+      "python"
+    ],
+    "description": "The function 'fibonacci' should return an array of fibonacci numbers.  The function takes a number as an argument to decide how many no. of elements to produce. If the argument is less than or equal to 0 then return empty array\n\nExample:\n```javascript\nfibonacci(4) // should return  [0,1,1,2]\nfibonacci(-1) // should return []\n```\n```ruby\nfibonacci(4); # should return  [0,1,1,2]\nfibonacci(-1); # should return []\n```\n```python\nfibonacci(4) # should return  [0,1,1,2]\nfibonacci(-1) # should return []\n```\n\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "6-kyu/complete-fibonacci-series/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "545cedaa9943f7fe7b000048",
+    "name": "Detect Pangram",
+    "slug": "detect-pangram",
+    "rank": 6,
+    "kyu": "6 kyu",
+    "url": "https://www.codewars.com/kata/545cedaa9943f7fe7b000048",
+    "category": "reference",
+    "tags": [
+      "Strings",
+      "Data Structures",
+      "Fundamentals"
+    ],
+    "languages": [
+      "python",
+      "haskell",
+      "clojure",
+      "javascript",
+      "csharp",
+      "java",
+      "r",
+      "ruby",
+      "php",
+      "c",
+      "prolog",
+      "pascal",
+      "typescript",
+      "lambdacalc",
+      "factor",
+      "cobol",
+      "rust",
+      "lua",
+      "cpp"
+    ],
+    "description": "A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence \"The quick brown fox jumps over the lazy dog\" is a pangram, because it uses the letters A-Z at least once (case is irrelevant). \n\nGiven a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.\n\n```if:prolog\n**Note for prolog users**: your task is to write a predicate **is_pangram/1** instead.\n```\n```if:lambdacalc\n**For Lambda Calculus**: the string is a list of [BinaryScott-encoded numbers](https://github.com/codewars/lambda-calculus/wiki/encodings-guide#scott-binary-encoded-numerals) representing [Unicode code points](https://en.wikipedia.org/wiki/List_of_Unicode_characters#Basic_Latin).*\n\n`succ :: Number -> Number` and `add :: Number -> Number -> Number` are provided for free, if you need them. Church boolean and Scott list encodings are also provided for free, but you can optionally use your own encodings by replacing the exported functions `if-then-else`, `nil`, and `cons`, which are used by the tests.\n\n- purity: `LetRec`\n- numEncoding: `BinaryScott`\n\n**For example, the letter 'B' is represented by the decimal code point 66, which in big-endian binary is `1000010`, and therefore in little-endian BinaryScott would be `Bit0 (Bit1 (Bit0 (Bit0 (Bit0 (Bit0 (Bit1 End))))))`.*\n```\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "6-kyu/detect-pangram/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "514b92a657cdc65150000006",
+    "name": "Multiples of 3 or 5",
+    "slug": "multiples-of-3-or-5",
+    "rank": 6,
+    "kyu": "6 kyu",
+    "url": "https://www.codewars.com/kata/514b92a657cdc65150000006",
+    "category": "algorithms",
+    "tags": [
+      "Mathematics",
+      "Algorithms"
+    ],
+    "languages": [
+      "javascript",
+      "coffeescript",
+      "ruby",
+      "clojure",
+      "python",
+      "csharp",
+      "java",
+      "haskell",
+      "cpp",
+      "elixir",
+      "typescript",
+      "php",
+      "swift",
+      "go",
+      "rust",
+      "c",
+      "r",
+      "nim",
+      "fsharp",
+      "scala",
+      "lua",
+      "shell",
+      "powershell",
+      "crystal",
+      "nasm",
+      "julia",
+      "kotlin",
+      "racket",
+      "dart",
+      "factor",
+      "prolog",
+      "raku",
+      "cobol",
+      "commonlisp",
+      "d",
+      "vb",
+      "groovy"
+    ],
+    "description": "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.\n\nFinish the solution so that it returns the sum of all the multiples of 3 or 5 **below** the number passed in. \n\n~~~if:c,cobol,commonlisp,cpp,csharp,dart,elixir,factor,fsharp,javascript,julia,kotlin,lua,nasm,php,prolog,python,raqcket,ruby,rust,shell,swift,typescript,vb\nAdditionally, if the number is negative, return 0.\n~~~\n\n**Note:** If a number is a multiple of **both** 3 and 5, only count it *once*.\n  \n***Courtesy of projecteuler.net** ([Problem 1](https://projecteuler.net/problem=1))*\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "6-kyu/multiples-of-3-or-5/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "541c8630095125aba6000c00",
+    "name": "Sum of Digits / Digital Root",
+    "slug": "sum-of-digits-slash-digital-root",
+    "rank": 6,
+    "kyu": "6 kyu",
+    "url": "https://www.codewars.com/kata/541c8630095125aba6000c00",
+    "category": "algorithms",
+    "tags": [
+      "Mathematics",
+      "Algorithms"
+    ],
+    "languages": [
+      "ruby",
+      "javascript",
+      "coffeescript",
+      "python",
+      "clojure",
+      "haskell",
+      "java",
+      "csharp",
+      "swift",
+      "r",
+      "c",
+      "cpp",
+      "scala",
+      "nasm",
+      "go",
+      "ocaml",
+      "typescript",
+      "julia",
+      "prolog",
+      "nim",
+      "elixir",
+      "crystal",
+      "factor",
+      "elm",
+      "rust",
+      "pascal",
+      "fsharp",
+      "cobol",
+      "d",
+      "php",
+      "groovy",
+      "dart",
+      "lua",
+      "haxe"
+    ],
+    "description": "[Digital root](https://en.wikipedia.org/wiki/Digital_root) is the _recursive sum of all the digits in a number._\n\nGiven `n`, take the sum of the digits of `n`. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.\n\n## Examples\n```\n    16  -->  1 + 6 = 7\n   942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6\n132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6\n493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2\n```\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "6-kyu/sum-of-digits-slash-digital-root/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "5266876b8f4bf2da9b000362",
+    "name": "Who likes it?",
+    "slug": "who-likes-it",
+    "rank": 6,
+    "kyu": "6 kyu",
+    "url": "https://www.codewars.com/kata/5266876b8f4bf2da9b000362",
+    "category": "reference",
+    "tags": [
+      "Strings",
+      "Fundamentals"
+    ],
+    "languages": [
+      "javascript",
+      "haskell",
+      "ruby",
+      "python",
+      "csharp",
+      "cpp",
+      "java",
+      "php",
+      "c",
+      "julia",
+      "prolog",
+      "rust",
+      "fsharp",
+      "typescript",
+      "cobol",
+      "factor",
+      "scala",
+      "coffeescript",
+      "dart"
+    ],
+    "description": "You probably know the \"like\" system from Facebook and other pages. People can \"like\" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.\n\nImplement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:\n\n```\n[]                                -->  \"no one likes this\"\n[\"Peter\"]                         -->  \"Peter likes this\"\n[\"Jacob\", \"Alex\"]                 -->  \"Jacob and Alex like this\"\n[\"Max\", \"John\", \"Mark\"]           -->  \"Max, John and Mark like this\"\n[\"Alex\", \"Jacob\", \"Mark\", \"Max\"]  -->  \"Alex, Jacob and 2 others like this\"\n```\n\n\n```if:c\n* return must be an allocated string\n* do not mutate input\n```\n\nNote: For 4 or more names, the number in `\"and 2 others\"` simply increases.\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "6-kyu/who-likes-it/01-solution.js"
+      },
+      {
+        "lang": "python",
+        "path": "6-kyu/who-likes-it/02-solution.py"
+      }
+    ]
+  },
+  {
+    "id": "529b418d533b76924600085d",
+    "name": "Convert PascalCase string into snake_case",
+    "slug": "convert-pascalcase-string-into-snake-case",
+    "rank": 5,
+    "kyu": "5 kyu",
+    "url": "https://www.codewars.com/kata/529b418d533b76924600085d",
+    "category": "algorithms",
+    "tags": [
+      "Strings",
+      "Algorithms",
+      "Regular Expressions"
+    ],
+    "languages": [
+      "ruby",
+      "javascript",
+      "coffeescript",
+      "python",
+      "csharp",
+      "cobol"
+    ],
+    "description": "Complete the function/method so that it takes a `PascalCase` string and returns the string in `snake_case` notation. Lowercase characters can be numbers. If the method gets a number as input, it should return a string.\n\n## Examples\n```\n\"TestController\"  -->  \"test_controller\"\n\"MoviesAndBooks\"  -->  \"movies_and_books\"\n\"App7Test\"        -->  \"app7_test\"\n1                 -->  \"1\"\n```",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "5-kyu/convert-pascalcase-string-into-snake-case/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "583353eab189a5b860000049",
+    "name": "Lazy Chain",
+    "slug": "lazy-chain",
+    "rank": 5,
+    "kyu": "5 kyu",
+    "url": "https://www.codewars.com/kata/583353eab189a5b860000049",
+    "category": "reference",
+    "tags": [
+      "Functional Programming",
+      "Fundamentals"
+    ],
+    "languages": [
+      "javascript"
+    ],
+    "description": "Method chaining is a useful technique in JavaScript, allowing better composability and readability of functions.\n\nOne problem with standard JavaScript chaining is that chained methods are immediately executed upon creation.\n\n```javascript\nlet a = [ 1, 2, 3].map(x => x * 2).reverse();\n// a = [ 6, 4, 2]\n```\nThe problem with this is that it opens values up to possible mutation before being called.\n\n```javascript\na = a.join(\"\");\n// a = \"642\"\n\nfunction doSomething(array) {\n  // Does something to an array\n}\n\ndoSomething(a); // TypeError - a is not an array  \n```\n\nTo combat this we can create a function `lazyChain` that accepts an argument and allows chaining, but delays execution to when the value method is called.\n\n```javascript\nlet a = lazyChain([1,2,3])\n                          .invoke('map', x => x * 2)\n                          .invoke('reverse');\n\nconsole.log(a.value());\n// [ 6, 4, 2]\n\na.join(\"\");\n// TypeError\n\ndoSomething(a.value());\n// valid function call\n```\nYour task is to create the function `lazyChain` which accepts any value, and allows method chaining through the use of invoke, and execution with the value method.\n\nKeep in mind that invoke is general enough to accept any prototype methods from the standard language.",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "5-kyu/lazy-chain/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "530e15517bc88ac656000716",
+    "name": "Rot13",
+    "slug": "rot13-1",
+    "rank": 5,
+    "kyu": "5 kyu",
+    "url": "https://www.codewars.com/kata/530e15517bc88ac656000716",
+    "category": "reference",
+    "tags": [
+      "Ciphers",
+      "Fundamentals"
+    ],
+    "languages": [
+      "ruby",
+      "haskell",
+      "python",
+      "javascript",
+      "shell",
+      "elixir",
+      "csharp",
+      "c",
+      "crystal",
+      "nasm",
+      "cpp",
+      "purescript",
+      "rust",
+      "r",
+      "cobol",
+      "scala",
+      "coffeescript",
+      "java",
+      "haxe"
+    ],
+    "description": "ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters after it in the alphabet. ROT13 is an example of the Caesar cipher.\n\nCreate a function that takes a string and returns the string ciphered with Rot13. \nIf there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet should be shifted, like in the original Rot13 \"implementation\".\n\n```if:python\nPlease note that using `encode` is considered cheating.\n```\n\n```if:r\n**Note:** As R is a natively vectorized language, you should write `rot13()` such that the argument `x` may be a character vector of any length. The return value should always be a character vector of the same length as `x`.\n```\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "5-kyu/rot13-1/01-solution.js"
+      }
+    ]
+  },
+  {
+    "id": "520b9d2ad5c005041100000f",
+    "name": "Simple Pig Latin",
+    "slug": "simple-pig-latin",
+    "rank": 5,
+    "kyu": "5 kyu",
+    "url": "https://www.codewars.com/kata/520b9d2ad5c005041100000f",
+    "category": "algorithms",
+    "tags": [
+      "Regular Expressions",
+      "Algorithms"
+    ],
+    "languages": [
+      "javascript",
+      "coffeescript",
+      "ruby",
+      "python",
+      "csharp",
+      "objc",
+      "cpp",
+      "java",
+      "clojure",
+      "typescript",
+      "cobol"
+    ],
+    "description": "Move the first letter of each word to the end of it, then add \"ay\" to the end of the word. Leave punctuation marks untouched.\n\n## Examples\n\n```javascript\npigIt('Pig latin is cool'); // igPay atinlay siay oolcay\npigIt('Hello world !');     // elloHay orldway !\n```\n```objc\npigIt(@\"Pig latin is cool\"); // => @\"igPay atinlay siay oolcay\"\npigIt(@\"Hello world !\");     // => @\"elloHay orldway !\"\n```\n```ruby\npig_it('Pig latin is cool') # igPay atinlay siay oolcay\npig_it('Hello world !')     # elloHay orldway !\n```\n```python\npig_it('Pig latin is cool') # igPay atinlay siay oolcay\npig_it('Hello world !')     # elloHay orldway !\n```\n```csharp\nKata.PigIt(\"Pig latin is cool\"); // igPay atinlay siay oolcay\nKata.PigIt(\"Hello world !\");     // elloHay orldway !\n```\n```C++\npig_it(\"Pig latin is cool\");   // igPay atinlay siay oolcay\npig_it(\"Hello world !\");       // elloHay orldway\n```\n```Java\nPigLatin.pigIt('Pig latin is cool'); // igPay atinlay siay oolcay\nPigLatin.pigIt('Hello world !');     // elloHay orldway !\n```\n```clojure\n(piglatin/pig-it \"Pig latin is cool\") ; \"igPay atinlay siay oolcay\"\n(piglatin/pig-it \"Hello world !\")     ; \"elloHay orldway !\"\n```\n```typescript\npigIt('Pig latin is cool'); // igPay atinlay siay oolcay\npigIt('Hello world !');     // elloHay orldway !\n```\n```cobol\n      PigIt str = 'Pig latin is cool' => result = 'igPay atinlay siay oolcay'\n      PigIt str = 'Hello world !'     => result = 'elloHay orldway !\n```\n",
+    "solutions": [
+      {
+        "lang": "javascript",
+        "path": "5-kyu/simple-pig-latin/01-solution.js"
+      }
+    ]
+  }
+]

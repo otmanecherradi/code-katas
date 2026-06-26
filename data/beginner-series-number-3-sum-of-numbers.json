@@ -1,0 +1,41 @@
+{
+  "id": "55f2b110f61eb01779000053",
+  "name": "Beginner Series #3 Sum of Numbers",
+  "slug": "beginner-series-number-3-sum-of-numbers",
+  "rank": 7,
+  "kyu": "7 kyu",
+  "url": "https://www.codewars.com/kata/55f2b110f61eb01779000053",
+  "category": "reference",
+  "tags": [
+    "Fundamentals",
+    "Algorithms"
+  ],
+  "languages": [
+    "csharp",
+    "java",
+    "python",
+    "javascript",
+    "coffeescript",
+    "ruby",
+    "typescript",
+    "c",
+    "r",
+    "nasm",
+    "fsharp",
+    "haskell",
+    "julia",
+    "prolog",
+    "scala",
+    "cpp",
+    "pascal",
+    "crystal",
+    "shell",
+    "clojure",
+    "cobol",
+    "rust",
+    "go",
+    "lua",
+    "php"
+  ],
+  "description": "Given two integers `a` and `b`, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return `a` or `b`.\n\n**Note:** `a` and `b` are not ordered!\n\n## Examples (a, b) --> output (explanation)\n\n```\n(1, 0) --> 1 (1 + 0 = 1)\n(1, 2) --> 3 (1 + 2 = 3)\n(0, 1) --> 1 (0 + 1 = 1)\n(1, 1) --> 1 (1 since both are same)\n(-1, 0) --> -1 (-1 + 0 = -1)\n(-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)\n```\nYour function should only return a number, not the explanation about how you get that number."
+}
